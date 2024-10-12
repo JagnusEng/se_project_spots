@@ -6,14 +6,14 @@ This project involves creating a responsive web application called Spots, which 
   
 **Technologies and Techniques Used**
   
-HTML5: Structure of the web pages using semantic tags.
-CSS3: Styling the application, including custom fonts, layouts, and responsive design techniques.
-BEM Methodology: File structure and class naming for maintainable CSS.
-Flexbox and CSS Grid: For responsive layouts, specifically the card grid system.
-Media Queries: To handle different breakpoints for desktop (1440px), tablet, and mobile (320px).
-GitHub Pages: Deployed the project for public access.
-Figma: Used to reference design mockups for different device screen sizes.
-Font Management: Applied Google Fonts (Poppins) with @font-face. 
+1. HTML5: Structure of the web pages using semantic tags.
+2. CSS3: Styling the application, including custom fonts, layouts, and responsive design techniques.
+3. BEM Methodology: File structure and class naming for maintainable CSS.
+4. Flexbox and CSS Grid: For responsive layouts, specifically the card grid system.
+5. Media Queries: To handle different breakpoints for desktop (1440px), tablet, and mobile (320px).
+6. GitHub Pages: Deployed the project for public access.
+7. Figma: Used to reference design mockups for different device screen sizes.
+8. Font Management: Applied Google Fonts (Poppins) with @font-face. 
 
 
 **Functionality**  
