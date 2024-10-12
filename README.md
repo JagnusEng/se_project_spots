@@ -33,7 +33,7 @@ Spots is a responsive web application that adjusts its layout and design element
 
 ## Live Demo
 
-[Live Demo on GitHub Pages](#)
+[Live Demo on GitHub Pages](https://jagnuseng.github.io/se_project_spots/)
 
 **Figma**
 
@@ -42,6 +42,3 @@ Spots is a responsive web application that adjusts its layout and design element
 **Images**
 
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-> > > > > > > cb76df2 (Updated README and prepared for GitHub Pages deployment)
-> > > > > > > Good luck and have fun!
