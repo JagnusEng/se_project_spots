@@ -2,9 +2,7 @@
 
 ### Overview  
 
-* Intro  
-* Figma  
-* Images  
+This project involves creating a responsive web application called Spots, which is an interactive social media platform where users can add and remove photos, like photos from other users, and update their profiles. The project incorporates adaptive web design principles and ensures the site layout adjusts smoothly across desktop, tablet, and mobile devices using techniques like media queries, Flexbox, and Grid.
   
 **Intro**
   
