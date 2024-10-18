@@ -8,7 +8,8 @@
 - Future Improvements
 - Live Demo
 - Figma
-- Images
+- Image
+- Project Video
 
 **Intro**
 
@@ -39,6 +40,18 @@ Spots is a responsive web application that adjusts its layout and design element
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
-**Images**
+### Image
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+- I exported an image from Figma for this project. You can view the process [here](https://www.figma.com/).
+- After exporting, I optimized the images using [TinyPNG](https://tinypng.com/) to reduce file sizes, ensuring faster load times for the project.
+- Example image: `Cards.png`, which is used in the layout.
+
+### Image Example
+
+Below is an optimized image used in the project:
+
+![Cards Image](./images/Cards.png)
+
+## Project Video
+
+You can watch the project walkthrough video [here](https://www.loom.com/share/75c21f5bd5724f47804902a21a60bf18?sid=33c4eb66-cdae-462f-820a-4dbf21a577c2).
