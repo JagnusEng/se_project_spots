@@ -1,3 +1,7 @@
+.card {
+  position: relative;
+}
+
 .card__image {
   height: 413px;
   width: 100%;
@@ -26,9 +30,35 @@
 }
 
 .card__like-btn {
-  background-image: url(../images/heart.svg);
+  background: url("../images/heart.svg") 0 0 no-repeat;
   width: 23px;
   height: 20px;
+  border: none;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.card__like-btn:hover {
+  opacity: 1;
+}
+
+.card__like-btn_liked {
+  background-image: url(../images/very_red.png);
+  opacity: 1;
+}
+
+.card__like-btn_liked:hover {
+  background-image: url(../images/not-so-red.png);
+}
+
+.card__trash-btn {
+  background-image: url(../images/State=Default-Trash.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 10px;
+  left: 371px;
   border: none;
   background-color: transparent;
   opacity: 40%;
@@ -36,7 +66,8 @@
   cursor: pointer;
 }
 
-.card__like-btn:hover {
+.card__trash-btn:hover {
+  background-image: url(../images/State=RedHover-Trash.png);
   opacity: 1;
 }
 
@@ -58,5 +89,26 @@
 
   .cards__list {
     gap: 22px;
+  }
+
+  .card__trash-btn {
+    background-image: url(../images/State=Default-Trash.png);
+    position: absolute;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    top: 10px;
+    left: 246px;
+    border: none;
+    background-color: transparent;
+    opacity: 90%;
+    cursor: auto;
+    cursor: pointer;
+    background-size: contain;
+  }
+
+  .card__trash-btn:hover {
+    background-image: url(../images/State=RedHover-Trash.png);
+    opacity: 1;
   }
 }
