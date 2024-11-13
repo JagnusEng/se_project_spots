@@ -1,3 +1,10 @@
+import "../vendor/normalize.css";
+import "../pages/index.css";
+import "../blocks/profile.css";
+
+import { enableValidation, settings, resetValidation } from "./validation.js";
+enableValidation(settings);
+
 const initialCards = [
   {
     name: "Val Thorens",
