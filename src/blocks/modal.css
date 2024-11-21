@@ -85,6 +85,26 @@
   color: #212121;
 }
 
+.modal__title-avatar {
+  max-width: 100%;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0 0 36px;
+  line-height: 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+.modal__title-delete {
+  width: 590px;
+  justify-content: space-between;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
 .modal__label {
   display: flex;
   flex-direction: column;
@@ -130,8 +150,55 @@
   border: none;
 }
 
+.modal__submit-btn_type_white {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  border: 2px solid black;
+
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.modal__submit-btn_type_red {
+  background-color: rgba(255, 101, 101, 1);
+}
+
 .modal__submit-btn:hover {
   opacity: 0.8;
+}
+
+.modal__submit-btn_type_white:hover {
+  background-color: rgba(33, 33, 33, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+
+.modal__submit-btn_type_red:hover {
+  background-color: rgba(255, 51, 51, 1);
+  opacity: 1;
+}
+
+.modal__delete-content {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 8px;
+  border: none;
+}
+
+.modal__delete-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.close_delete-icon {
+  position: absolute;
+  top: -40px;
+  right: -90px;
 }
 
 .modal__submit-btn_disabled {
@@ -211,4 +278,14 @@
     top: -28px;
     right: 0;
   }
+
+  .modal__title-delete {
+    width: auto;
+    justify-content: space-between;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
 }
