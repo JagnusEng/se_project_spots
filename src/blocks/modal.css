@@ -148,6 +148,10 @@
   border-radius: 8px;
   gap: 8px;
   border: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .modal__submit-btn_type_white {
@@ -193,7 +197,6 @@
   justify-content: center;
   gap: 20px;
 }
-
 
 .close_delete-icon {
   position: absolute;
@@ -242,6 +245,16 @@
     line-height: 20px;
   }
 
+  .modal__title-avatar {
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #212121;
+    margin: 10px 0 34px;
+  }
+
   .modal__close-btn {
     right: 0px;
     top: 16px;
@@ -263,6 +276,7 @@
     padding-bottom: 18px;
     padding-left: 32px;
     gap: 8px;
+    line-height: 1;
   }
 
   .modal__image {
@@ -287,5 +301,18 @@
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-}
+
+    .modal__delete-btn {
+      flex-direction: column;
+    }
+
+    .profile__edit-icon {
+      width: 23.34px;
+      top: 52px;
+      left: 52px;
+      border-radius: 6px;
+      padding: 4px;
+      gap: 8px;
+    }
+  }
 }

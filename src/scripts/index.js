@@ -104,6 +104,8 @@ function getCardElement(data) {
   cardImage.alt = data.name;
   cardTitle.textContent = data.name;
 
+  cardLikeBtn.classList.toggle("card__like-btn_liked", data.isLiked);
+
   cardImage.addEventListener("click", () => {
     previewModalImageEl.src = data.link;
     previewModalImageEl.alt = data.name;
@@ -116,8 +118,8 @@ function getCardElement(data) {
     api
       .changeLikeStatus(data._id, data.isLiked)
       .then((updatedCard) => {
-        console.log(updatedCard);
-        evt.target.classList.toggle("card__like-btn_liked");
+        data.isLiked = updatedCard.isLiked;
+        evt.target.classList.toggle("card__like-btn_liked", updatedCard.isLiked);
       })
       .catch((err) => console.error(`Error updating like status: ${err}`));
   });
@@ -209,13 +211,15 @@ function handleDeleteCard(cardElement, cardID) {
 }
 
 profileEditButton.addEventListener("click", () => {
-  editModalNameInput.value = profileName.textContent;
-  editModalDescriptionInput.value = profileDescription.textContent;
+  editModalNameInput.value = profileName.textContent || ""; //Added
+  editModalDescriptionInput.value = profileDescription.textContent || ""; //Added
   resetValidation(editFormElement, settings);
   openModal(editModal);
 });
 
 cardModalBtn.addEventListener("click", () => {
+  cardForm.reset(); //added
+  resetValidation(cardForm, settings); //added
   openModal(cardModal);
 });
 

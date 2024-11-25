@@ -28,6 +28,8 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 16px;
+  width: 190px;
+  height: 190px;
 }
 
 .profile__avatar-btn::after {
@@ -41,7 +43,6 @@
   border-radius: 10px;
   object-fit: cover;
 }
-
 
 .profile__column {
   display: flex;
@@ -60,6 +61,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  padding: 10px 0;
 }
 
 .profile__description {
@@ -70,6 +72,11 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: rgba(33, 33, 33, 0.7);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .profile__edit-btn {
@@ -127,6 +134,24 @@
 
   .profile__avatar-btn {
     visibility: visible;
+    width: 24px;
+    height: 24px;
+    top: 52px;
+    left: 52px;
+    padding: 4px;
+    /*gap: 8px;*/
+    border-radius: 6px;
+    border: none;
+  }
+
+  .profile__avatar-container:hover .profile__avatar-btn {
+    visibility: visible;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   /* TODO -set content of ::after element to ""*/
@@ -150,6 +175,8 @@
     margin-bottom: 6px;
     font-size: 20px;
     max-width: 288px;
+    margin-top: 12px;
+    line-height: 25px;
   }
 
   .profile__description {
@@ -168,5 +195,8 @@
     position: relative;
     width: 80px;
     height: 80px;
+  }
+  .profile__avatar-btn::after {
+    content: "";
   }
 }
