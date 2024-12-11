@@ -64,7 +64,7 @@ const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 const deleteIcon = document.querySelector(".close_delete-icon");
 
-//TODO -Destructure the secon item in the callback of the ,then()
+
 api
   .getAppInfo()
   .then(([user, cards]) => {
@@ -89,7 +89,7 @@ function handleLike(evt, id) {
     .catch((err) => console.error(`Error updating like status: ${err}`));
 }
 
-//TODO - if the card is liked, set the active class on the card
+
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
@@ -179,7 +179,7 @@ function handleEditFormSubmit(evt) {
     });
 }
 
-//TODO - implement loading text for all other form submissions
+
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
@@ -201,7 +201,7 @@ function handleAddCardSubmit(evt) {
       closeModal(cardModal); // Close modal
     })
     .catch((err) => console.error(`Error adding card: ${err}`))
-    .finally(() => setButtontext(submitBtn, false, "Save", "Saving...")); // Reset button text
+    .finally(() => setButtontext(submitBtn, false, "Save", "Saving...")); 
 }
 
 function handleDeleteCard(cardElement, cardID) {
@@ -211,15 +211,15 @@ function handleDeleteCard(cardElement, cardID) {
 }
 
 profileEditButton.addEventListener("click", () => {
-  editModalNameInput.value = profileName.textContent || ""; //Added
-  editModalDescriptionInput.value = profileDescription.textContent || ""; //Added
+  editModalNameInput.value = profileName.textContent || ""; 
+  editModalDescriptionInput.value = profileDescription.textContent || ""; 
   resetValidation(editFormElement, settings);
   openModal(editModal);
 });
 
 cardModalBtn.addEventListener("click", () => {
-  cardForm.reset(); //added
-  resetValidation(cardForm, settings); //added
+  cardForm.reset(); 
+  resetValidation(cardForm, settings); 
   openModal(cardModal);
 });
 
@@ -235,7 +235,7 @@ previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
-//TODO - select avatrar modal button at the top of the page
+
 avatarModalBtn.addEventListener("click", () => {
   openModal(avatarModal);
 });
@@ -265,7 +265,7 @@ function handleDeleteSubmit(evt) {
     .deleteCard(selectedCardID)
     .then(() => {
       selectedCard.remove(); // Remove card from DOM
-      closeModal(deleteModal); // Close modal
+      closeModal(deleteModal); 
     })
     .catch((err) => console.error(`Error deleting card: ${err}`))
     .finally(() => setButtontext(submitBtn, false, "Delete", "Deleting...")); // Reset button text
@@ -293,11 +293,11 @@ function handleAvatarSubmit(evt) {
   api
     .editAvatarInfo(avatarInput.value)
     .then((updatedUser) => {
-      profileAvatar.src = updatedUser.avatar; // Update avatar in DOM
-      closeModal(avatarModal); // Close modal
+      profileAvatar.src = updatedUser.avatar; 
+      closeModal(avatarModal); 
     })
     .catch((err) => console.error(`Error updating avatar: ${err}`))
-    .finally(() => setButtontext(submitBtn, false, "Save", "Saving...")); // Reset button text
+    .finally(() => setButtontext(submitBtn, false, "Save", "Saving...")); 
 }
 
 avatarForm.addEventListener("submit", handleAvatarSubmit);
